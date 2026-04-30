@@ -4,7 +4,7 @@
 #
 # Usage:
 #   bash scripts/web-artifact-release/release.sh
-#   bash scripts/web-artifact-release/release.sh v0.1.59
+#   bash scripts/web-artifact-release/release.sh my-0.1.59
 #
 # This script is designed for GitHub Actions. It builds from a current repository
 # tag, creates a dedicated artifact tag that points at the same source commit,
@@ -14,7 +14,7 @@ set -euo pipefail
 
 RELEASE_REPO="1996fanrui/paseo"
 RELEASE_REMOTE="origin"
-RELEASE_TAG_PREFIX="envtools-web"
+RELEASE_TAG_PREFIX="web"
 
 usage() {
   awk '
